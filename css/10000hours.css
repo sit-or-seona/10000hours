@@ -1,0 +1,207 @@
+/* fonts */
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+/* Components */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+body {
+    background-color: #5B2386;
+    color: white;
+}
+
+/* main */
+main {
+    margin: 130px auto;
+    text-align: center;
+}
+
+p, input, button {
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.tit-timelaw {
+    position: relative;
+    padding-top: 280px;
+    overflow: hidden;
+}
+
+.tit-timelaw img {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tit-timelaw img:nth-child(1) {
+    height: 116px;
+    position: absolute;
+    top: 80px;
+}
+
+.tit-timelaw img:nth-child(2) {
+    height: 280px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.img-txt {
+    padding: 50px 0 80px;
+}
+
+.img-quotes {
+    position: absolute;
+    top: 590px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.txt-desc {
+    position: relative;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.txt-desc > strong {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.cont-inp {
+    margin-top: 100px;
+    position: relative;
+}
+
+.cont-inp > .txt-wannabe {
+    margin-bottom: 24px;
+}
+
+input {
+    width: 228px;
+    height: 52px;
+    text-align: center;
+    border-radius: 7px;
+    color: #444;
+    border-color: #BABCBE;
+    margin: 0 8px;
+    padding: 4px 0 0;
+}
+
+input::placeholder {
+    color: #BABCBE;
+}
+
+button {
+    margin-top: 120px;
+    line-height: 1;
+    padding: 21px 49px;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansBold';
+    color: #5B2386;
+    cursor: pointer;
+}
+
+.cont-inp > img {
+    position: absolute;
+    top: 278px;
+    padding-left: 10px;
+}
+
+.cont-result {
+    margin-top: 158px;
+    line-height: 1;
+}
+
+.cont-result > .txt-wannabe {
+    margin-bottom: 18px;
+}
+
+.cont-result strong {
+    font-family: 'GmarketSansBold';
+    font-size: 72px;
+    vertical-align: -16px;
+    margin: 0 8px;
+}
+
+.btn-share {
+    background-color: white;
+    margin-left: 14px;
+}
+
+/* footer */
+footer {
+    margin: 140px 0 80px;
+    text-align: center;
+}
+
+.cont-footer > img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.cont-footer small {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* modal */
+.cont-modal {
+    display: none;
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    padding: 80px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 10px #555;
+}
+
+.cont-modal img {
+    margin: 30px 0 60px;
+    height: 320px;
+}
+
+.cont-modal img[src*="tit"] {
+    margin: 0;
+    height: 130px;
+    overflow: hidden;
+}
+
+.btn-go {
+    margin: 0;
+    border: none;
+}
