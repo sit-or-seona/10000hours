@@ -123,8 +123,7 @@ input::placeholder {
 
 button {
     margin-top: 120px;
-    line-height: 1;
-    padding: 21px 49px;
+    padding: 18px 49px;
     background: #FCEE21;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -142,7 +141,6 @@ button {
 
 .cont-result {
     margin-top: 158px;
-    line-height: 1;
 }
 
 .cont-result > .txt-wannabe {
@@ -175,7 +173,7 @@ footer {
 .cont-footer small {
     font-family: 'Noto Sans KR';
     font-size: 12px;
-    line-height: 1.8;
+    line-height: 1.4;
 }
 
 /* modal */
@@ -190,18 +188,18 @@ footer {
     box-shadow: 1px 1px 5px 10px #555;
 }
 
-.cont-modal img {
-    margin: 30px 0 60px;
-    height: 320px;
-}
-
 .cont-modal img[src*="tit"] {
     margin: 0;
     height: 130px;
     overflow: hidden;
 }
 
-.btn-go {
+.cont-modal img {
+    margin: 30px 0 60px;
+    height: 320px;
+}
+
+.cont-modal .btn-go {
     margin: 0;
     border: none;
 }
